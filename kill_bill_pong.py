@@ -1,3 +1,6 @@
+# based on code by Graviatr64 YouTube video
+# https://www.youtube.com/watch?v=UsUOYnp3zBU
+
 import pygame as pg
 
 
@@ -44,7 +47,7 @@ class Ball:
     pg.draw.circle(fenster, self.farbe, self.pos, BALL_RADIUS)
 
 
-class Block():
+class Block:
   def __init__(self, farbe, pos):
     self.farbe = farbe
     self.pos = pg.Vector2(pos)
@@ -57,7 +60,7 @@ class Block():
     self.farbe = 'yellow' if self.farbe == 'black' else 'black'
 
 
-class Schläger():
+class Schläger:
   def __init__(self, farbe, rechts):
     self.farbe = farbe
     self.rechts = rechts
